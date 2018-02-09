@@ -66,13 +66,5 @@ describe('Simon says', function() {
 		it('capitalizes every word (aka title case)', function() {
 			expect(simon.titleCreator("david copperfield")).toEqual("David Copperfield");
 		});
-
-		it("doesn't capitalize 'little words' in a title", function() {
-			expect(simon.titleCreator("war and peace")).toEqual("War and Peace");
-		});
-
-		it('does capitalize "little words" at the start of a title', function() {
-			expect(simon.titleCreator("the bridge over the river kwai")).toEqual("The Bridge over the River Kwai");
-		});
 	});
 });
